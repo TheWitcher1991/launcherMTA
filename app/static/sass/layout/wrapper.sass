@@ -1,0 +1,49 @@
+#wrapper-content
+    @include wrapper-cnt-style
+    
+    .wc__section
+        position: relative
+        overflow: hidden
+        
+        .control__wrap
+            position: absolute
+            top: 60px
+            color: #a2a2a2
+            cursor: pointer
+            display: none
+            transition: all 0.2s linear
+            font-size: 28px
+            
+            &:hover, &:focus
+                color: $fgR
+
+        .control__left 
+            left: 16px
+                
+        .control__right
+            display: flex
+            right: 16px
+        
+        .row__wrapper
+            display: flex
+            transition: transform 0.6s ease
+            
+            .item
+                flex: 0 0 100%
+                max-width: 100%
+    
+    .home
+        display: flex
+        width: 100%
+        justify-content: space-between
+        padding: 100px 16px 0 16px
+        
+        .logo 
+            display: block
+            
+            .img__logo span 
+                display: block
+                width: 250px
+                
+                img
+                    width: 100%

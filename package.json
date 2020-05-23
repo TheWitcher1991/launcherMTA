@@ -1,0 +1,80 @@
+{
+  "name": "launcher",
+  "description": "launcher for MTA",
+  "version": "1.0.0",
+  "main": "main.js",
+  "bin": "cli.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "test": "mocha",
+    "build-script": "webpack --mode production",
+    "watch-script": "webpack --mode production -w",
+    "package": "npm-run-all package:*",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=build --icon=",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=build"
+  },
+  "author": "Ashot Svazyan <ashot.svazyan222@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWitcher1991/launcherMTA.git"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-for-of": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
+    "asar": "^3.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.1",
+    "devtron": "^1.4.0",
+    "electron": "^7.1.7",
+    "electron-log": "^4.1.1",
+    "electron-packager": "^14.1.1",
+    "electron-winstaller": "^4.0.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
+    "mocha": "^7.0.0",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.2",
+    "update-electron-app": "^1.5.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "xml2js": "^0.4.23"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "gross-js": "^1.0.2",
+    "gulp": "^4.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "os": "^0.1.1",
+    "postcss-loader": "^3.0.0"
+  },
+  "engines": {
+    "node": ">= 12.x",
+    "npm": ">= 6.x",
+    "yarn": ">= 1.x"
+  }
+}

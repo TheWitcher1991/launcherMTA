@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="refresh" content="300">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.9.97/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="./public/style/style.bundle.css">
+
+    <title></title>
+</head>
+<body>
+
+    <main id="wrapper">
+        <header id="header">
+            <section class="header__secton section__page">
+                <div class="row">
+                    <nav class="header__nav">
+                        <div class="header__logo">
+                            <h1><span class="os">MTA</span><span class="ot">PROVINCE</span><span class="of">demo</span></h1>
+                        </div>
+                        <div class="header__menu">
+                            <ul>
+                                <li id="minimize-button"><i class="far fa-window-minimize"></i></li>
+                            <!--<li id="setting-button"><i class="fas fa-cog"></i></li>-->
+                                <li id="close-button"><i class="fas fa-times"></i></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        
+        <article id="wrapper-content">
+            <section class="wc__section slider section__page">
+                <div class="row__wrapper">
+                    <div class="home item">
+                        <div class="stats__server">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque ea fugit illum laudantium libero magnam molestias nobis sequi velit! A ad corporis eligendi, fuga fugiat possimus quasi repudiandae velit?
+                            <div id="q"></div>
+                        </div>
+                        <div class="logo">
+                            <div class="img__logo">
+                                <span>
+                                    <img src="./public/img/logo_3.png" alt="logo">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur culpa delectus eligendi facilis incidunt maiores numquam obcaecati pariatur quisquam quos recusandae reiciendis repudiandae, sint sit soluta tenetur vero! Velit!
+                    </div>
+                    <div class="files item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur culpa delectus eligendi facilis incidunt maiores numquam obcaecati pariatur quisquam quos recusandae reiciendis repudiandae, sint sit soluta tenetur vero! Velit!
+                    </div>
+                </div>
+                <a href="#" role="button" class="control__wrap control__left"><i class="fas fa-angle-left"></i></a>
+                <a href="#" role="button" class="control__wrap control__right control__show"><i class="fas fa-angle-right"></i></a>
+            </section>
+        </article>
+        
+        <footer id="footer">
+            <section class="footer__section section__page">
+                <div class="row">
+                    <div class="select__server">
+                        <div class="options">
+                            <ul>
+                                <li class="opt-1">#1 СЕРВЕР</li>
+                                <li class="opt-2">#2 СЕРВЕР</li>
+                                <li class="opt-3">#3 СЕРВЕР</li>
+                                <li class="opt-4">#4 СЕРВЕР</li>
+                                <li class="opt-5">#5 СЕРВЕР</li>
+                                <li class="opt-6">#6 СЕРВЕР</li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <h1>ВЫБЕРИТЕ СЕРВЕР</h1>
+                            <i class="fas fa-angle-down arrow"></i>
+                        </div>
+                    </div>
+                    <div class="start__game">
+                        <h1><i class="fas fa-play"></i> ИГРАТЬ</h1>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+
+    <!--<section id="loader">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>-->
+    
+    <script src="../electron/renderer.js"></script>
+    <script src="./public/script/script.bundle.js"></script>
+</body>
+</html>
